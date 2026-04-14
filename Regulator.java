@@ -1,0 +1,3 @@
+class Regulator {
+    int level;
+}

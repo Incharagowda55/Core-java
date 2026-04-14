@@ -1,6 +1,0 @@
-class Dolo {
-
-    Dolo() {
-        System.out.println("Dolo has invoked");
-    }
-}

@@ -1,0 +1,3 @@
+class Blade {
+    int count;
+}

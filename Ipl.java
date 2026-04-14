@@ -1,19 +1,24 @@
-class Ipl{
-    int teamId;
-    String teamName;
-    Player player;
+class IPL {
 
-    public Ipl(int teamId,String teamName,Player player){
-        this.teamId=teamId;
-        this.teamName=teamName;
-        this.player=player;
+    RCB rcb;
+
+    IPL(RCB rcb) {
+        this.rcb = rcb;
     }
 
-    public void getIplDetails(){
-        System.out.println("Team Id: "+this.teamId);
-        System.out.println("Team Name: "+this.teamName);
-        this.player.getPlayerDetails();
+    void setRCB(RCB rcb) {
+        this.rcb = rcb;
+    }
+
+    void display() {
+        System.out.println("IPL Team Details:");
+
+        if (rcb != null) {
+            System.out.println("Captain: " + rcb.captain);
+            System.out.println("Titles: " + rcb.titles);
+            System.out.println("Home Ground: " + rcb.homeGround);
+        } else {
+            System.out.println("No team assigned");
+        }
     }
 }
-
-
